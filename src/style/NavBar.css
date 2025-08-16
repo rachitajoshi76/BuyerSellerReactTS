@@ -1,0 +1,87 @@
+/* ===== NAVBAR ===== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.85rem 2rem;
+  background: linear-gradient(90deg, #1e3a8a 0%, #2563eb 50%, #4f46e5 100%);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  font-family: "Inter", sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* ===== LOGO ===== */
+.logo {
+  font-size: 1.55rem;
+  font-weight: 700;
+  color: white;
+  letter-spacing: -0.5px;
+}
+
+/* ===== NAV LINKS ===== */
+.nav-center {
+  display: flex;
+  gap: 1.4rem;
+}
+
+.nav-link {
+  padding: 0.6rem 1.1rem;
+  text-decoration: none;
+  color: #dbeafe; /* Light blue */
+  font-weight: 500;
+  border-radius: 8px;
+  transition: all 0.25s ease;
+}
+
+.nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: white;
+  transform: translateY(-1px);
+}
+
+.nav-link.active {
+  background: #facc15; /* Gold highlight */
+  color: #1e293b;
+  box-shadow: 0 2px 6px rgba(250, 204, 21, 0.4);
+}
+
+/* ===== RIGHT SIDE ===== */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+}
+
+.mode-label {
+  font-size: 0.9rem;
+  color: #e0e7ff;
+}
+
+/* ===== BUTTON (MODE TOGGLE) ===== */
+.mode-toggle {
+  background: #facc15;
+  border: none;
+  padding: 0.45rem 1rem;
+  color: #1e293b;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 2px 6px rgba(250, 204, 21, 0.4);
+}
+
+.mode-toggle:hover {
+  background: #fbbf24;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(250, 204, 21, 0.5);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .nav-center {
+    display: none;
+  }
+}
