@@ -29,7 +29,7 @@ const sellersSlice = createSlice({
   initialState,
   reducers: {
     updateCurrentSellerField<K extends keyof Seller>(
-      state: { currentSeller: { [x: string]: string | number | string[] | [number, number]; }; },
+      state: { currentSeller: { [x: string]: string | number | string[] | [number, number]| number[] }; },
       action: PayloadAction<{ field: K; value: Seller[K] }>
     ) {
       state.currentSeller[action.payload.field] = action.payload.value;

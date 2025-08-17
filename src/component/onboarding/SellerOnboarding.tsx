@@ -18,8 +18,9 @@ const SellerOnboarding: React.FC = () => {
 
   const handleChange = <K extends keyof typeof seller>(
     field: K,
-    value: (typeof seller)[K]
+    value: (any)
   ) => {
+    console.log(field ,value,typeof value,typeof field);
     dispatch(updateCurrentSellerField({ field, value }));
     setErrors((prev) => ({ ...prev, [field]: "" })); // clear error on change
   };

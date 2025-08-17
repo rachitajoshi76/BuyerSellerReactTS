@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import {  Routes, Route, Navigate, HashRouter } from "react-router-dom";
 import Navbar from "./component/home/NavBar";
 import BuyerOnboarding from "./component/onboarding/BuyerOnboarding";
 import SellerOnboarding from "./component/onboarding/SellerOnboarding";
@@ -10,7 +10,7 @@ import MatchOutcomeFormWrapper from "./component/outcome/MatchOutcomeFormWrapper
 import AllMatches from "./component/outcome/AllMatches";
 
 const App: React.FC = () => (
-  <Router>
+  <HashRouter>
     <Navbar />
     <div style={{ padding: "1rem" }}>
       <Routes>
@@ -24,7 +24,7 @@ const App: React.FC = () => (
         <Route path="/match-form/:matchId" element={<MatchOutcomeFormWrapper />} />
       </Routes>
     </div>
-  </Router>
+  </HashRouter>
 );
 
 export default App;
