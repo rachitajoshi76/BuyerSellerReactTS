@@ -1,0 +1,91 @@
+/* Form container */
+.buyer-onboarding-container {
+  background-color: #eaf6ff; /* light blue */
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 800px;
+  margin: 2rem auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Title */
+.buyer-onboarding-title {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+/* Input labels */
+label {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  display: block;
+  color: #222;
+}
+
+/* Text input and textarea */
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Error message */
+.error-text {
+  color: red;
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+}
+
+/* Submit button */
+.submit-button {
+  background-color: #007bff;
+  color: white;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1.5rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+/* Section titles */
+h3, h4 {
+  margin-top: 1.5rem;
+  color: #333;
+}
+
+/* Goal and Industry buttons */
+.goal-button,
+.industry-button {
+  border: 2px solid #444;
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  margin: 0.3rem;
+  font-size: 0.9rem;
+  background-color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.goal-button.selected,
+.industry-button.selected {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
